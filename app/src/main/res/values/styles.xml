@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="GreenTextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">#00ff00</item>
+        <item name="boxStrokeWidth">8dp</item>
+    </style>
+
+    <style name="PurpleTextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">@color/purple_200</item>
+        <item name="boxStrokeWidth">6dp</item>
+        <item name="hintTextColor">@color/purple_200</item>
+    </style>
+</resources>

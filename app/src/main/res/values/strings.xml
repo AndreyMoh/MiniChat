@@ -1,3 +1,28 @@
 <resources>
     <string name="app_name">MiniChat</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_title">TitleActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="register">register</string>
+    <string name="sign_in">sign in</string>
+    <string name="sign_out">sign out</string>
+    <string name="AppName">MiniChat</string>
+    <string name="GreetingText">Welcome to MiniChat</string>
+    <string name="enter_to_reg_text">Click to register</string>
+    <string name="already_registered_text">If you\'re already registered ?</string>
+    <string name="not_sign_in_text">if you are not sign in</string>
+    <string name="already_have_acc">Already have an account ?</string>
+    <string name="login">Login</string>
+    <string name="register_first_upper">Register</string>
+    <string name="search">Search</string>
+    <string name="title_activity_chat">ChatActivity</string>
 </resources>
