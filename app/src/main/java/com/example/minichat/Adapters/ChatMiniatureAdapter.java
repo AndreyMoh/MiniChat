@@ -38,7 +38,7 @@ public class ChatMiniatureAdapter extends RecyclerView.Adapter<ChatMiniatureAdap
 
     @Override
     public void onBindViewHolder(@NonNull ChatMiniatureHolder holder, int position) {
-        holder.avatar.setImageResource(R.drawable.minichat_icon);
+        holder.avatar.setImageResource(items.get(position).getAvatar());
         holder.username.setText(items.get(position).getUsername());
         holder.lastMsg.setText(items.get(position).getLastMsg());
         holder.date.setText(items.get(position).getDate());

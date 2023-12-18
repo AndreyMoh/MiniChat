@@ -10,44 +10,101 @@
         android:id="@+id/header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:weightSum="10">
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:background="@color/gray_a50p"
+        android:padding="10dp">
 
-        <EditText
-            android:layout_width="wrap_content"
+        <Space
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="9"
-            android:paddingStart="5dp"
-            android:hint="@string/search"
-            android:autofillHints=""
-            android:inputType="text"
-            android:drawableStart="@android:drawable/ic_menu_search"
-            android:drawablePadding="5dp"/>
+            android:layout_weight="10"/>
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"/>
+        <ImageButton
+            android:id="@+id/add_button"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/ic_add_button"
+            android:layout_weight="1"
+            android:contentDescription="@string/description_add_button" />
 
     </LinearLayout>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/MiniaturesRecyclerView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp"
-        android:layout_below="@+id/header"
-        android:layout_above="@+id/sign_out_button"/>
-
-    <Button
-        android:id="@+id/sign_out_button"
+    <FrameLayout
+        android:id="@+id/main_layout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_above="@+id/footer"/>
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:text="@string/sign_out"/>
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:weightSum="3"
+        android:padding="10dp"
+        android:background="@color/gray_a50p">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/acc_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            app:cardBackgroundColor="@color/transparent"
+            android:outlineSpotShadowColor="@color/transparent">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_acc_blank"
+                android:layout_gravity="center"
+                android:contentDescription="@string/button_frame"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/chats_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:cardBackgroundColor="@color/transparent"
+            android:outlineSpotShadowColor="@color/transparent">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_chat_blank"
+                android:layout_gravity="center"
+                android:contentDescription="@string/button_frame"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/settings_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            app:cardBackgroundColor="@color/transparent"
+            android:outlineSpotShadowColor="@color/transparent">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_settings_blank"
+                android:layout_gravity="center"
+                android:contentDescription="@string/button_frame"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
 </RelativeLayout>
