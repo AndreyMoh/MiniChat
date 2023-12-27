@@ -31,4 +31,10 @@
     <string name="button_frame">button_frame</string>
     <string name="description_add_button">add_chats</string>
     <string name="chat_miniature_avatar">chatMiniature_avatar</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="username">Username</string>
+    <string name="sent_messages">sent messages</string>
+    <string name="message">Message</string>
+    <string name="back_to_main">back to main</string>
 </resources>

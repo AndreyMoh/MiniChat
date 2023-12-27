@@ -17,6 +17,7 @@ import android.widget.ImageButton;
 import com.example.minichat.Adapters.ChatMiniatureAdapter;
 import com.example.minichat.Classes.ChatMiniature;
 import com.example.minichat.Fragments.MainFragment;
+import com.example.minichat.Fragments.SettingsFragment;
 import com.example.minichat.LoginActivities.LoginActivity;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -68,7 +69,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         } else if (id == R.id.chats_btn) {
             selectFragment(new MainFragment());
         } else if (id == R.id.settings_btn) {
-            // frame
+            selectFragment(new SettingsFragment());
         }
     }
 
